@@ -1,4 +1,4 @@
-package ru.kofesutra.exhibitionstestdemidov.Application
+package ru.kofesutra.exhibitionstestdemidov.application
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import ru.kofesutra.exhibitionstestdemidov.R
 import ru.kofesutra.exhibitionstestdemidov.databinding.CardViewInnerBinding
 import ru.kofesutra.exhibitionstestdemidov.model.Exhibit
 

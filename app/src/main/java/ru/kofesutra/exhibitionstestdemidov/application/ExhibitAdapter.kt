@@ -1,11 +1,9 @@
-package ru.kofesutra.exhibitionstestdemidov.Application
+package ru.kofesutra.exhibitionstestdemidov.application
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ru.kofesutra.exhibitionstestdemidov.model.Exhibit
 import ru.kofesutra.exhibitionstestdemidov.databinding.CardViewBinding

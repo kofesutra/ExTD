@@ -3,17 +3,13 @@ package ru.kofesutra.exhibitionstestdemidov
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log.d
-import androidx.recyclerview.widget.RecyclerView
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import ru.kofesutra.exhibitionstestdemidov.Application.ExhibitAdapter
-import ru.kofesutra.exhibitionstestdemidov.Application.ExhibitAdapterInner
+import ru.kofesutra.exhibitionstestdemidov.application.ExhibitAdapter
 import ru.kofesutra.exhibitionstestdemidov.model.Exhibit
-import ru.kofesutra.exhibitionstestdemidov.model.ExhibitsLoader
 import ru.kofesutra.exhibitionstestdemidov.restExhibitsLoader.Common
 import ru.kofesutra.exhibitionstestdemidov.databinding.ActivityMainBinding
-import ru.kofesutra.exhibitionstestdemidov.databinding.CardViewBinding
 
 class MainActivity : AppCompatActivity() {
 
