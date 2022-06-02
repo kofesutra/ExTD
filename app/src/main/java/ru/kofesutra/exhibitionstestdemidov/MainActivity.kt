@@ -7,13 +7,13 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import ru.kofesutra.exhibitionstestdemidov.databinding.ActivityMainBinding
-import ru.kofesutra.exhibitionstestdemidov.application.ExhibitAdapter
+import ru.kofesutra.exhibitionstestdemidov.application.ExhibitAdapterOuter
 import ru.kofesutra.exhibitionstestdemidov.model.Exhibit
 import ru.kofesutra.exhibitionstestdemidov.restExhibitsLoader.Common
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var adapterOuter: ExhibitAdapter
+    lateinit var adapterOuter: ExhibitAdapterOuter
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         Common.retrofitService.getData().enqueue(object : Callback<List<Exhibit>> {
             override fun onResponse(call: Call<List<Exhibit>>, response: Response<List<Exhibit>>) {
 
-                adapterOuter = ExhibitAdapter(baseContext, response.body() as List<Exhibit>)
+                adapterOuter = ExhibitAdapterOuter(baseContext, response.body() as List<Exhibit>)
                 val recOut = binding.recyclerOuter
                 recOut.adapter = adapterOuter
                 adapterOuter.notifyDataSetChanged()

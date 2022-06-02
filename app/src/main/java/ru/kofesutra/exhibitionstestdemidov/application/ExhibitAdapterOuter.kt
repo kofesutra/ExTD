@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import ru.kofesutra.exhibitionstestdemidov.databinding.CardViewBinding
 import ru.kofesutra.exhibitionstestdemidov.model.Exhibit
 
-class ExhibitAdapter(private val context: Context, private val userList: List<Exhibit>):
-    RecyclerView.Adapter<ExhibitAdapter.viewHolderOuter>() {
+class ExhibitAdapterOuter(private val context: Context, private val userList: List<Exhibit>):
+    RecyclerView.Adapter<ExhibitAdapterOuter.viewHolderOuter>() {
     lateinit var adapterInner: ExhibitAdapterInner
 
     class viewHolderOuter(binding: CardViewBinding): RecyclerView.ViewHolder(binding.root){
