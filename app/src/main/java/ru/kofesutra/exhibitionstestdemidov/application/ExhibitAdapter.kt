@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import ru.kofesutra.exhibitionstestdemidov.model.Exhibit
 import ru.kofesutra.exhibitionstestdemidov.databinding.CardViewBinding
+import ru.kofesutra.exhibitionstestdemidov.model.Exhibit
 
 class ExhibitAdapter(private val context: Context, private val userList: List<Exhibit>):
     RecyclerView.Adapter<ExhibitAdapter.viewHolderOuter>() {

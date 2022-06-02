@@ -6,10 +6,10 @@ import android.util.Log.d
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import ru.kofesutra.exhibitionstestdemidov.databinding.ActivityMainBinding
 import ru.kofesutra.exhibitionstestdemidov.application.ExhibitAdapter
 import ru.kofesutra.exhibitionstestdemidov.model.Exhibit
 import ru.kofesutra.exhibitionstestdemidov.restExhibitsLoader.Common
-import ru.kofesutra.exhibitionstestdemidov.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
